@@ -5,6 +5,16 @@
     <title>WCSV fundraiser page</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
+    <script type="text/javascript">
+        window.onload = setupRefresh;
+     
+        function setupRefresh() {
+          setTimeout("refreshPage();", 10000); // 5000 millisec = 5 sec
+        }
+        function refreshPage() {
+           window.location = location.href;
+        }
+      </script>
 </head>
 
 <body>
